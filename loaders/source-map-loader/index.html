@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e606d1a175acd6537b25.css" rel="stylesheet">
+      <link href="/60828a86443c43b00908.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -36,11 +36,9 @@
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p><code>source-map-loader</code> extracts existing source maps from all JavaScript entries. This includes both inline source maps as well as those linked via URL. All source map data is passed to webpack for processing as per a chosen <a href="https://webpack.js.org/configuration/devtool/">source map style</a> specified by the <code>devtool</code> option in <a href="https://webpack.js.org/configuration/">webpack.config.js</a>.
- +
- +This loader is especially useful when using 3rd-party libraries having their own source maps. If not extracted and processed into the souce map of the webpack bundle, browsers may misinterpret source map data. <code>source-map-loader</code> allows webpack to maintain source map data continuity across libraries so ease of debugging is preserved.
- +
- +<code>source-map-loader</code> will extract from any JavaScript file, including those in the <code>node_modules</code> directory. Be mindful in setting <a href="https://webpack.js.org/configuration/module/#rule-include">include</a> and <a href="https://webpack.js.org/configuration/module/#rule-exclude">exclude</a> rule conditions to maximize bundling performance.</p>
+<p><code>source-map-loader</code> extracts existing source maps from all JavaScript entries. This includes both inline source maps as well as those linked via URL. All source map data is passed to webpack for processing as per a chosen <a href="https://webpack.js.org/configuration/devtool/">source map style</a> specified by the <code>devtool</code> option in <a href="https://webpack.js.org/configuration/">webpack.config.js</a>.</p>
+<p>This loader is especially useful when using 3rd-party libraries having their own source maps. If not extracted and processed into the souce map of the webpack bundle, browsers may misinterpret source map data. <code>source-map-loader</code> allows webpack to maintain source map data continuity across libraries so ease of debugging is preserved.</p>
+<p><code>source-map-loader</code> will extract from any JavaScript file, including those in the <code>node_modules</code> directory. Be mindful in setting <a href="https://webpack.js.org/configuration/module/#rule-include">include</a> and <a href="https://webpack.js.org/configuration/module/#rule-exclude">exclude</a> rule conditions to maximize bundling performance.</p>
 <h2 class="header"><a class="anchor" href="#maintainers" id="maintainers"></a><span class="text">Maintainers</span><a class="icon-link" href="#maintainers"></a></h2>
 <table><tbody><tr><td align="center"><p><img width="150" height="150" src="https://avatars3.githubusercontent.com/u/166921?v=3&amp;s=150"></p>
 <p><br></p>
