@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/d9a7e93fa93da3b071ff.css" rel="stylesheet">
+      <link href="/91ff09e847b1063a4cc5.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -167,7 +167,7 @@
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p>Note that webpack need to generate an unique module identifier from resource and all loaders including options. It tries to do this with a <code>JSON.stringify</code> of the options object. This is fine in 99.9%, but may be not unique if you apply the same loaders with different options to the same resource and the options have some stringified values. It also breaks if the options object cannot be stringified (i. e. circular JSON). Because of this you can have a <code>ident</code> property in the options object which is used as unique identifier.</p>
+<p>Note that webpack needs to generate a unique module identifier from resource and all loaders including options. It tries to do this with a <code>JSON.stringify</code> of the options object. This is fine in 99.9% of cases, but may be not unique if you apply the same loaders with different options to the same resource and the options have some stringified values. It also breaks if the options object cannot be stringified (i.e. circular JSON). Because of this you can have a <code>ident</code> property in the options object which is used as unique identifier.</p>
 <h2 class="header"><a class="anchor" href="#module-contexts" id="module-contexts"></a><span class="text">Module Contexts</span><a class="icon-link" href="#module-contexts"></a></h2>
 <p>(Deprecated)</p>
 <p>These options describe the default settings for the context created when a dynamic dependency is encountered.</p>
