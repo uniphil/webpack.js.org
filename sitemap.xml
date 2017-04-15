@@ -84,9 +84,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/configuration/other-options/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/configuration/output/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/configuration/performance/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/configuration/output/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/plugins/index.html</loc>
     </url>    <url>
@@ -117,6 +117,8 @@
         <loc>https://webpack.js.org/guides/caching/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/code-splitting/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/guides/code-splitting-async/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/code-splitting-css/index.html</loc>
     </url>    <url>
@@ -194,9 +196,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/json-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/json5-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/loaders/less-loader/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/json5-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/mocha-loader/index.html</loc>
     </url>    <url>
@@ -224,13 +226,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/transform-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/url-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/loaders/val-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/worker-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/yaml-frontmatter-loader/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/url-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/babili-webpack-plugin/index.html</loc>
     </url>    <url>
@@ -282,8 +284,6 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/dependency/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/api/plugins/parser/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/resolver/index.html</loc>
@@ -291,4 +291,6 @@
         <loc>https://webpack.js.org/api/plugins/tapable/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/template/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
     </url></urlset>
