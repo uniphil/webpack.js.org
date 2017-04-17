@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/5c3f5a0860531e702a46.css" rel="stylesheet">
+      <link href="/a3f52f60539f3d547b56.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -81,7 +81,7 @@ with the following structure:</p>
 <span class="token comment" spellcheck="true">// more errors/warnings</span>
 <span class="token punctuation">]</span>
 </code></pre>
-<p>The reporter function will be excuted with the loader context as <code>this</code>. You may emit messages using <code>this.emitWarning(...)</code> or <code>this.emitError(...)</code>. See <a href="http://webpack.github.io/docs/loaders.html#loader-context">webpack docs on loader context</a>.</p>
+<p>The reporter function will be excuted with the loader context as <code>this</code>. You may emit messages using <code>this.emitWarning(...)</code> or <code>this.emitError(...)</code>. See <a href="https://webpack.js.org/api/loaders/#the-loader-context">webpack docs on loader context</a>.</p>
 <p><strong>Note:</strong> jshint reporters are <strong>not compatible</strong> with jshint-loader!
 This is due to the fact that reporter input is only processed from one file; not multiple files. Error reporting in this manner differs from <a href="http://www.jshint.com/docs/reporters/">tranditional reporters</a> for jshint
 since the loader plugin (i.e. jshint-loader) is executed for each source file; and thus the reporter is executed for each file.</p>
