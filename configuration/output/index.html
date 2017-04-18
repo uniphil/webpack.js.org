@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/3c024012038968248f65.css" rel="stylesheet">
+      <link href="/6bb9e07b66d731c1d862.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -502,9 +502,22 @@ publicPath<span class="token punctuation">:</span> <span class="token string">&q
 <p>There is no need to change it.</p>
 <h2 class="header"><a class="anchor" href="#output-strictmoduleexceptionhandling" id="output-strictmoduleexceptionhandling"></a><span class="text"><code>output.strictModuleExceptionHandling</code></span><a class="icon-link" href="#output-strictmoduleexceptionhandling"></a></h2>
 <p><code>boolean</code></p>
-<p>Tell webpack to remove a module from cache if it throws an exception when it is <code>require</code>d. </p>
+<p>Tell webpack to remove a module from the module instance cache (<code>require.cache</code>) if it throws an exception when it is <code>require</code>d.</p>
 <p>It defaults to <code>false</code> for performance reasons.</p>
 <p>When set to <code>false</code>, the module is not removed from cache, which results in the exception getting thrown only on the first <code>require</code> call (making it incompatible with node.js).</p>
+<p>For instance, consider <code>module.js</code>:</p>
+<pre><code class="lang-js"><span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;error&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>With <code>strictModuleExceptionHandling</code> set to <code>false</code>, only the first <code>require</code> throws an exception:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// with strictModuleExceptionHandling = false</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;module&quot;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &lt;- throws</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;module&quot;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &lt;- doesn&apos;t throw</span>
+</code></pre>
+<p>Instead, with <code>strictModuleExceptionHandling</code> set to <code>true</code>, all <code>require</code>s of this module throw an exception:</p>
+<pre><code class="lang-js"><span class="token comment" spellcheck="true">// with strictModuleExceptionHandling = true</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;module&quot;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &lt;- throws</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;module&quot;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &lt;- also throw</span>
+</code></pre>
 <h2 class="header"><a class="anchor" href="#output-umdnameddefine" id="output-umdnameddefine"></a><span class="text"><code>output.umdNamedDefine</code></span><a class="icon-link" href="#output-umdnameddefine"></a></h2>
 <p><code>boolean</code></p>
 <p>When using <code>libraryTarget: &quot;umd&quot;</code>, setting:</p>
