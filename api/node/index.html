@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e2d009d4ac165e95b4b6.css" rel="stylesheet">
+      <link href="/3c5233296bc018042f36.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -22,8 +22,9 @@
 <p>The Node.js API is useful in scenarios in which you need to customize the build or development process since all the reporting and error handling must be done manually and webpack only does the compiling part. For this reason the <a href="/configuration/stats"><code>stats</code></a> configuration options will not have any effect in the <code>webpack()</code> call.</p>
 <h2 class="header"><a class="anchor" href="#installation" id="installation"></a><span class="text">Installation</span><a class="icon-link" href="#installation"></a></h2>
 <p>To start using webpack Node.js API, first install webpack if you haven&#x2019;t yet:</p>
-<pre><code>npm <span class="token function">install</span> webpack --save-dev
-</code></pre><p>Then require the webpack module in your Node.js script:</p>
+<pre><code class="lang-bash">npm <span class="token function">install</span> webpack --save-dev
+</code></pre>
+<p>Then require the webpack module in your Node.js script:</p>
 <pre><code class="lang-js"><span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;webpack&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// Or if you prefer ES2015:</span>
@@ -106,7 +107,7 @@ compiler<span class="token punctuation">.</span><span class="token function">run
 <li>Errors and Warnings (if any)</li>
 <li>Timings</li>
 <li>Module and Chunk information</li>
-<li>etc.</li>
+<li>and much more...</li>
 </ul>
 <p>The <a href="/api/cli">webpack CLI</a> uses this information to display a nicely formatted output in your console.</p>
 <p>This object exposes these methods:</p>

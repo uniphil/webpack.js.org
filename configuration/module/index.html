@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e2d009d4ac165e95b4b6.css" rel="stylesheet">
+      <link href="/3c5233296bc018042f36.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -44,10 +44,8 @@
 <p>Rule results are used only when the Rule condition matches.</p>
 <p>There are two output values of a Rule:</p>
 <ol>
-<li><p>Applied loaders: An array of loaders applied to the resource.</p>
-</li>
-<li><p>Parser options: An options object which should be used to create the parser for this module.</p>
-</li>
+<li>Applied loaders: An array of loaders applied to the resource.</li>
+<li>Parser options: An options object which should be used to create the parser for this module.</li>
 </ol>
 <p>These properties affect the loaders: <a href="#rule-loader"><code>loader</code></a>, <a href="#rule-options-rule-query"><code>options</code></a>, <a href="#rule-use"><code>use</code></a>.</p>
 <p>For compatibility also these properties: <a href="#rule-options-rule-query"><code>query</code></a>, <a href="#rule-loaders"><code>loaders</code></a>.</p>
@@ -167,7 +165,8 @@
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p>Note that webpack needs to generate a unique module identifier from resource and all loaders including options. It tries to do this with a <code>JSON.stringify</code> of the options object. This is fine in 99.9% of cases, but may be not unique if you apply the same loaders with different options to the same resource and the options have some stringified values. It also breaks if the options object cannot be stringified (i.e. circular JSON). Because of this you can have a <code>ident</code> property in the options object which is used as unique identifier.</p>
+<p>Note that webpack needs to generate a unique module identifier from the resource and all loaders including options. It tries to do this with a <code>JSON.stringify</code> of the options object. This is fine in 99.9% of cases, but may be not unique if you apply the same loaders with different options to the resource and the options have some stringified values. </p>
+<p>It also breaks if the options object cannot be stringified (i.e. circular JSON). Because of this you can have a <code>ident</code> property in the options object which is used as unique identifier.</p>
 <h2 class="header"><a class="anchor" href="#module-contexts" id="module-contexts"></a><span class="text">Module Contexts</span><a class="icon-link" href="#module-contexts"></a></h2>
 <p>(Deprecated)</p>
 <p>These options describe the default settings for the context created when a dynamic dependency is encountered.</p>

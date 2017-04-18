@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e2d009d4ac165e95b4b6.css" rel="stylesheet">
+      <link href="/3c5233296bc018042f36.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -354,8 +354,7 @@
 <span class="token comment" spellcheck="true">// your users will use your library like:</span>
 MyLibrary<span class="token punctuation">.</span><span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>(Not specifying a <code>output.library</code> will cancel this var configuration)</p>
-<p><code>libraryTarget: &quot;this&quot;</code> - When your library is loaded, the <strong>return value of your entry point</strong> will be assigned to this, the meaning of <code>this</code> is up to you:</p>
+<blockquote class="warning"><div class="tip-content"> Not specifying a <code>output.library</code> will cancel this <code>&quot;var&quot;</code> configuration. </div></blockquote><p><code>libraryTarget: &quot;this&quot;</code> - When your library is loaded, the <strong>return value of your entry point</strong> will be assigned to this, the meaning of <code>this</code> is up to you:</p>
 <pre><code class="lang-javascript"><span class="token keyword">this</span><span class="token punctuation">[</span><span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> _entry_return_<span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// your users will use your library like:</span>
@@ -395,8 +394,7 @@ The output will be something like this:</p>
     <span class="token comment" spellcheck="true">//what this module returns is what your entry chunk returns</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>But if you download this script, first you may get a error: <code>define is not defined</code>, it&#x2019;s ok! 
-If you are distributing your library with AMD, then your users need to use RequireJS to load it. </p>
+<p>But if you download this script, you may get an error: <code>define is not defined</code>, it&#x2019;s ok! If you are distributing your library with AMD, then your users need to use RequireJS to load it. </p>
 <p>Now that you have RequireJS loaded, you can load your library.</p>
 <p>But, <code>require([ _what?_ ])</code>? </p>
 <p><code>output.library</code>!</p>
