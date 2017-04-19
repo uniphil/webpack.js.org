@@ -36,13 +36,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/cli/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/loaders/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/api/node/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/passing-a-config/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/api/loaders/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
     </url>    <url>
@@ -106,11 +106,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/development/release-process/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/get-started/why-webpack/index.html</loc>
+        <loc>https://webpack.js.org/get-started/install-webpack/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/author-libraries/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/get-started/install-webpack/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/build-performance/index.html</loc>
     </url>    <url>
@@ -144,15 +142,17 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/hmr-react/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/get-started/why-webpack/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/guides/installation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/lazy-load-react/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/migrating/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/production-build/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/guides/public-path/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/guides/production-build/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/shimming/index.html</loc>
     </url>    <url>
@@ -268,9 +268,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/source-map-dev-tool-plugin/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/pluginsapi/compiler/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/plugins/uglifyjs-webpack-plugin/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/pluginsapi/compiler/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/pluginsapi/template/index.html</loc>
     </url>    <url>
@@ -284,11 +284,11 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/dependency/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/api/plugins/parser/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/resolver/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/tapable/index.html</loc>
     </url>    <url>
