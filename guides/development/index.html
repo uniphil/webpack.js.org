@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/9824ce3d852af6f8cdaf.css" rel="stylesheet">
+      <link href="/6a5b7929839331327a04.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -44,7 +44,7 @@
 <pre><code class="lang-bash">webpack --progress --watch
 </code></pre>
 <p>Make a change in one of your files and hit save. You should see that it&apos;s recompiling.</p>
-<p>Watch mode makes no assumptions about a server, so you will need to provide your own. An easy server to use is <a href="https://github.com/zeit/serve"><code>serve</code></a>. After installing (<code>npm i --save-dev serve</code>), you can run it in the directory where the outputted files are:</p>
+<p>Watch mode makes no assumptions about a server, so you will need to provide your own. An easy server to use is <a href="https://github.com/zeit/serve"><code>serve</code></a>. After installing (<code>npm install --save-dev serve</code>), you can run it in the directory where the outputted files are:</p>
 <pre><code class="lang-bash"><span class="token variable"><span class="token variable">`</span>npm bin<span class="token variable">`</span></span>/serve
 </code></pre>
 <p>You may find it more convenient to run <code>serve</code> using npm scripts. You can do so by first creating a <code>start</code> script in <code>package.json</code> as follows:</p>
@@ -72,7 +72,7 @@ so you don&apos;t have to refresh the page, you will have to setup webpack to us
 <pre><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/bundle.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <p>Start with installing <code>webpack-dev-server</code> from npm:</p>
-<pre><code class="lang-bash">npm <span class="token function">install</span> webpack-dev-server --save-dev
+<pre><code class="lang-bash">npm <span class="token function">install</span> --save-dev webpack-dev-server
 </code></pre>
 <p>When it&apos;s done installing, you should be able to use <code>webpack-dev-server</code> like this:</p>
 <pre><code class="lang-bash">webpack-dev-server --open
@@ -86,7 +86,7 @@ so you don&apos;t have to refresh the page, you will have to setup webpack to us
 <p>webpack-dev-middleware works for connect-based middleware stacks. This can be useful if you already have a Node.js server or if you want to have full control over the server.</p>
 <p>The middleware will cause webpack to compile files in-memory. When a compilation is running, it will delay the request to a file until the compilation is done.</p>
 <blockquote class="warning"><div class="tip-content"> This is intended for advanced users. webpack-dev-server is much easier to use. </div></blockquote><p>Start with installing the dependencies from npm:</p>
-<pre><code class="lang-bash">npm <span class="token function">install</span> express webpack-dev-middleware --save-dev
+<pre><code class="lang-bash">npm <span class="token function">install</span> --save-dev express webpack-dev-middleware
 </code></pre>
 <p>After installing, you can use the middleware like this:</p>
 <pre><code class="lang-js"><span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;express&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>

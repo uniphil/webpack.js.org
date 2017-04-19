@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/9824ce3d852af6f8cdaf.css" rel="stylesheet">
+      <link href="/6a5b7929839331327a04.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -22,9 +22,9 @@
 <p>Before getting started, make sure you have a fresh version of <a href="https://nodejs.org/en/">Node.js</a> installed. The current LTS is an ideal starting point. You may run into a variety of issues with the older versions as they may be missing functionality webpack or related packages might need.</p>
 <p>The next section tells you how to install webpack locally in a project.</p>
 <h3 class="header"><a class="anchor" href="#local-installation" id="local-installation"></a><span class="text">Local Installation</span><a class="icon-link" href="#local-installation"></a></h3>
-<pre><code class="lang-bash">npm <span class="token function">install</span> webpack --save-dev
+<pre><code class="lang-bash">npm <span class="token function">install</span> --save-dev webpack
 
-npm <span class="token function">install</span> webpack@<span class="token operator">&lt;</span>version<span class="token operator">&gt;</span> --save-dev
+npm <span class="token function">install</span> --save-dev webpack@<span class="token operator">&lt;</span>version<span class="token operator">&gt;</span>
 </code></pre>
 <p>If you are using npm scripts in your project, npm will try to look for webpack installation in your local modules for which this installation technique is useful.</p>
 <pre><code class="lang-json"><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
@@ -33,7 +33,7 @@ npm <span class="token function">install</span> webpack@<span class="token opera
 </code></pre>
 <p>This is standard and recommended practice.</p>
 <blockquote class="tip"><div class="tip-content"> To run the local installation of webpack you can access its bin version as <code>node_modules/.bin/webpack</code> </div></blockquote><h3 class="header"><a class="anchor" href="#global-installation" id="global-installation"></a><span class="text">Global Installation</span><a class="icon-link" href="#global-installation"></a></h3>
-<blockquote class="warning"><div class="tip-content"> Note that a global webpack installation is not a recommended practice. This locks you down to a specific version of webpack and might fail in projects that use a different version. </div></blockquote><pre><code class="lang-bash">npm <span class="token function">install</span> webpack -g
+<blockquote class="warning"><div class="tip-content"> Note that a global webpack installation is not a recommended practice. This locks you down to a specific version of webpack and might fail in projects that use a different version. </div></blockquote><pre><code class="lang-bash">npm <span class="token function">install</span> --global webpack
 </code></pre>
 <p>The <code>webpack</code> command is now available globally.</p>
 <h3 class="header"><a class="anchor" href="#bleeding-edge" id="bleeding-edge"></a><span class="text">Bleeding Edge</span><a class="icon-link" href="#bleeding-edge"></a></h3>
