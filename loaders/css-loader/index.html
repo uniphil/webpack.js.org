@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/a1a595005cff76853eef.css" rel="stylesheet">
+      <link href="/dc2db2f9ddc091e276b5.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -639,19 +639,20 @@ You can configure the generated ident with the <code>localIdentName</code> query
 <span class="token punctuation">}</span>
 </code></pre>
 <h3 class="header"><a class="anchor" href="#importloaders" id="importloaders"></a><span class="text"><code>importLoaders</code></span><a class="icon-link" href="#importloaders"></a></h3>
-<p>The query parameter <code>importLoaders</code> allow to configure which loaders should be applied to <code>@import</code>ed resources.</p>
-<p><code>importLoaders</code>: That many loaders after the css-loader are used to import resources.</p>
+<p>The query parameter <code>importLoaders</code> allows to configure how many loaders before <code>css-loader</code> should be applied to <code>@import</code>ed resources.</p>
 <p><strong>webpack.config.js</strong></p>
 <pre><code class="lang-js"><span class="token punctuation">{</span>
   test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
   use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&apos;style-loader&apos;</span><span class="token punctuation">,</span>
     <span class="token punctuation">{</span>
       loader<span class="token punctuation">:</span> <span class="token string">&apos;css-loader&apos;</span><span class="token punctuation">,</span>
       options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        importLoaders<span class="token punctuation">:</span> <span class="token number">1</span>
+        importLoaders<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token comment" spellcheck="true">// 0 =&gt; no loaders (default); 1 =&gt; postcss-loader; 2 =&gt; postcss-loader, sass-loader</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token string">&apos;postcss-loader&apos;</span>
+    <span class="token string">&apos;postcss-loader&apos;</span><span class="token punctuation">,</span>
+    <span class="token string">&apos;sass-loader&apos;</span>
   <span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
 </code></pre>
