@@ -128,8 +128,6 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/code-splitting-require/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/comparison/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/guides/compatibility/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/dependency-management/index.html</loc>
@@ -153,6 +151,8 @@
         <loc>https://webpack.js.org/guides/production-build/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/public-path/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/guides/comparison/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/shimming/index.html</loc>
     </url>    <url>
@@ -220,19 +220,19 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/source-map-loader/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/loaders/style-loader/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/loaders/svg-inline-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/transform-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/url-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/style-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/loaders/val-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/yaml-frontmatter-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/loaders/worker-loader/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/yaml-frontmatter-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/babili-webpack-plugin/index.html</loc>
     </url>    <url>
@@ -288,9 +288,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/dependency/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/plugins/parser/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/api/plugins/parser/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/resolver/index.html</loc>
     </url>    <url>
