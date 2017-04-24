@@ -128,6 +128,8 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/code-splitting-require/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/guides/comparison/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/guides/compatibility/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/dependency-management/index.html</loc>
@@ -151,8 +153,6 @@
         <loc>https://webpack.js.org/guides/production-build/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/public-path/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/guides/comparison/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/shimming/index.html</loc>
     </url>    <url>
