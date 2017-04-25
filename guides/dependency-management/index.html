@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/ea031a570d27da13ccf3.css" rel="stylesheet">
+      <link href="/d39d6c67b576b23be367.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -44,8 +44,8 @@ Regular expression: /^.*\.ejs$/
 <p>The context module also contains some runtime logic to access the map.</p>
 <p>This means dynamic requires are supported but will cause all possible modules to be included in the bundle.</p>
 <h2 class="header"><a class="anchor" href="#require-context" id="require-context"></a><span class="text"><code>require.context</code></span><a class="icon-link" href="#require-context"></a></h2>
-<p>You can create your own context with the <code>require.context()</code> function.
-It allows you to pass in a directory to search, a flag indicating whether subdirectories should be searched
+<p>You can create your own context with the <code>require.context()</code> function.</p>
+<p>It allows you to pass in a directory to search, a flag indicating whether subdirectories should be searched
 too, and a regular expression to match files against.</p>
 <p>webpack parses for <code>require.context()</code> in the code while building.</p>
 <p>The syntax is as follows:</p>
@@ -58,7 +58,7 @@ too, and a regular expression to match files against.</p>
 <pre><code class="lang-javascript">require<span class="token punctuation">.</span><span class="token function">context</span><span class="token punctuation">(</span><span class="token string">&quot;../&quot;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token regex">/\.stories\.js$/</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment" spellcheck="true">// a context with all files in the parent folder and descending folders ending with `.stories.js`.</span>
 </code></pre>
-<h3 class="header"><a class="anchor" href="#context-module-api" id="context-module-api"></a><span class="text">context module API</span><a class="icon-link" href="#context-module-api"></a></h3>
+<blockquote class="warning"><div class="tip-content"> The arguments passed to <code>require.context</code> must be literals! </div></blockquote><h3 class="header"><a class="anchor" href="#context-module-api" id="context-module-api"></a><span class="text">context module API</span><a class="icon-link" href="#context-module-api"></a></h3>
 <p>A context module exports a (require) function that takes one argument: the request.</p>
 <p>The exported function has 3 properties: <code>resolve</code>, <code>keys</code>, <code>id</code>.</p>
 <ul>
@@ -84,7 +84,7 @@ too, and a regular expression to match files against.</p>
 <ul>
 <li><code>id</code> is the module id of the context module. This may be useful for <code>module.hot.accept</code>.</li>
 </ul>
-</div><div><hr><h3>Contributors</h3><div class="contributors"><div class="contributors__list"><a class="contributor" href="https://github.com/chrisVillanueva"><img src="https://github.com/chrisVillanueva.png?size=90"><span class="contributor__name"> chrisVillanueva</span></a><a class="contributor" href="https://github.com/ndelangen"><img src="https://github.com/ndelangen.png?size=90"><span class="contributor__name"> ndelangen</span></a></div></div></div><div class="interactive" id="components/gitter/gitter.jsx" data-props="{}"><span class="gitter"></span></div></section></div><footer class="footer"><div class="container footer__inner"><section class="footer__left"><a href="/guides/get-started" class="footer__link">Get Started</a><a href="/organization" class="footer__link">Organization</a><a href="/support" class="footer__link">Support</a><a href="/guides/why-webpack#comparison" class="footer__link">Comparison</a></section><section class="footer__middle"><a href="/" class="footer__icon"><img src="/6bc5d8cf78d442a984e70195db059b69.svg"></a></section><section class="footer__right"><a href="/branding" class="footer__link">Branding</a><a href="//gitter.im/webpack/webpack" target="_blank" class="footer__link">Gitter</a><a href="https://github.com/webpack/webpack/releases" target="_blank" class="footer__link">Changelog</a><a href="/license" class="footer__link">License</a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="footer__license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a></section></div></footer><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46921629-2', 'auto');ga('send', 'pageview');</script></div>
+</div><div><hr><h3>Contributors</h3><div class="contributors"><div class="contributors__list"><a class="contributor" href="https://github.com/chrisVillanueva"><img src="https://github.com/chrisVillanueva.png?size=90"><span class="contributor__name"> chrisVillanueva</span></a><a class="contributor" href="https://github.com/ndelangen"><img src="https://github.com/ndelangen.png?size=90"><span class="contributor__name"> ndelangen</span></a><a class="contributor" href="https://github.com/sokra"><img src="https://github.com/sokra.png?size=90"><span class="contributor__name"> sokra</span></a></div></div></div><div class="interactive" id="components/gitter/gitter.jsx" data-props="{}"><span class="gitter"></span></div></section></div><footer class="footer"><div class="container footer__inner"><section class="footer__left"><a href="/guides/get-started" class="footer__link">Get Started</a><a href="/organization" class="footer__link">Organization</a><a href="/support" class="footer__link">Support</a><a href="/guides/why-webpack#comparison" class="footer__link">Comparison</a></section><section class="footer__middle"><a href="/" class="footer__icon"><img src="/6bc5d8cf78d442a984e70195db059b69.svg"></a></section><section class="footer__right"><a href="/branding" class="footer__link">Branding</a><a href="//gitter.im/webpack/webpack" target="_blank" class="footer__link">Gitter</a><a href="https://github.com/webpack/webpack/releases" target="_blank" class="footer__link">Changelog</a><a href="/license" class="footer__link">License</a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="footer__license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a></section></div></footer><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46921629-2', 'auto');ga('send', 'pageview');</script></div>
 
     
       <script src="/b7d1d6b0933a91de08fc66231ecfa6ef.js"></script>
