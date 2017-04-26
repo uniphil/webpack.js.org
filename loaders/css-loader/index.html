@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e581d1952fe25d00e34d.css" rel="stylesheet">
+      <link href="/de3e593c6b701f6e9804.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -59,6 +59,20 @@ and the <a href="/loaders/url-loader/">url-loader</a> which you should specify i
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>css<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// {String}</span>
 </code></pre>
 <p>If there are SourceMaps, they will also be included in the result string.</p>
+<p>If, for one reason or another, you need to extract CSS as a
+plain string resource (i.e. not wrapped in a JS module) you
+might want to check out the <a href="https://github.com/peerigon/extract-loader">extract-loader</a>.
+It&apos;s useful when you, for instance, need to post process the CSS as a string.</p>
+<p><strong>webpack.config.js</strong></p>
+<pre><code class="lang-js"><span class="token punctuation">{</span>
+   test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+   use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+     <span class="token string">&apos;handlebars-loader&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// handlebars loader expects raw resource string</span>
+     <span class="token string">&apos;extract-loader&apos;</span><span class="token punctuation">,</span>
+     <span class="token string">&apos;css-loader&apos;</span>
+   <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <h2 class="header"><a class="anchor" href="#options" id="options"></a><span class="text">Options</span><a class="icon-link" href="#options"></a></h2>
 
 	    <div class="table">

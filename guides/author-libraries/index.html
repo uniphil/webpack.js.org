@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e581d1952fe25d00e34d.css" rel="stylesheet">
+      <link href="/de3e593c6b701f6e9804.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -108,6 +108,7 @@ It would be unnecessary for your library to bundle a library like <code>lodash</
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <p>This means that your library expects a dependency named <code>lodash</code> to be available in the consumer&apos;s environment.</p>
+<p>If your libary targets UMD, it&apos;s important to add all of the above mentioned ways of loading the external (<code>commonjs</code>, <code>commonjs2</code>, <code>amd</code> and <code>root</code>) as leaving one out will cause strange errors for a consumer trying to load your library in that environment.</p>
 <h3 class="header"><a class="anchor" href="#add-librarytarget" id="add-librarytarget"></a><span class="text">Add <code>libraryTarget</code></span><a class="icon-link" href="#add-librarytarget"></a></h3>
 <p>For widespread use of the library, we would like it to be compatible in different environments, i. e. CommonJS, AMD, Node.js and as a global variable.</p>
 <p>To make your library available for reuse, add <code>library</code> property in webpack configuration.</p>
