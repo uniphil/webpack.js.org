@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/d5c23f163157fd56a090.css" rel="stylesheet">
+      <link href="/3f9ffea438c2016ed5eb.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -96,10 +96,8 @@ compiler<span class="token punctuation">.</span><span class="token function">run
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <blockquote class="tip"><div class="tip-content"> It&#x2019;s not allowed to watch or run again before the existing watcher has been closed or invalidated. </div></blockquote><h3 class="header"><a class="anchor" href="#invalidate-watching" id="invalidate-watching"></a><span class="text">Invalidate <code>Watching</code></span><a class="icon-link" href="#invalidate-watching"></a></h3>
-<p>Manually invalidate the current compiling round, but don&#x2019;t stop watching.</p>
-<pre><code class="lang-js">watching<span class="token punctuation">.</span><span class="token function">invalidate</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
-  console<span class="token punctuation">.</span><span class="token function">warn</span><span class="token punctuation">(</span><span class="token string">&quot;Invalidated.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<p>Using <code>watching.invalidate</code>, you can manually invalidate the current compiling round, without stopping the watch process:</p>
+<pre><code class="lang-js">watching<span class="token punctuation">.</span><span class="token function">invalidate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 class="header"><a class="anchor" href="#stats-object" id="stats-object"></a><span class="text">Stats Object</span><a class="icon-link" href="#stats-object"></a></h2>
 <p>The <code>stats</code> object that is passed as a second argument of the <a href="#webpack-"><code>webpack()</code></a> callback, is a good source of information about the code compilation process. It includes:</p>

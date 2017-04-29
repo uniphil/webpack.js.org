@@ -20,17 +20,17 @@
     </url>    <url>
         <loc>https://webpack.js.org/license/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/organization/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/pluginsapi/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/support/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/vote/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/support/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/writers-guide/index.html</loc>
     </url>    <url>
@@ -106,15 +106,15 @@
     </url>    <url>
         <loc>https://webpack.js.org/development/release-process/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/get-started/install-webpack/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/get-started/why-webpack/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/author-libraries/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/get-started/install-webpack/index.html</loc>
+        <loc>https://webpack.js.org/guides/build-performance/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/caching/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/guides/build-performance/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/code-splitting/index.html</loc>
     </url>    <url>
@@ -138,15 +138,15 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/development-vagrant/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/guides/environment-variables/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/guides/get-started/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/hmr-react/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/environment-variables/index.html</loc>
+        <loc>https://webpack.js.org/guides/installation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/lazy-load-react/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/guides/installation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/migrating/index.html</loc>
     </url>    <url>
@@ -264,15 +264,15 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/ignore-plugin/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/plugins/limit-chunk-count-plugin/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/plugins/loader-options-plugin/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/plugins/limit-chunk-count-plugin/index.html</loc>
+        <loc>https://webpack.js.org/plugins/min-chunk-size-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/no-emit-on-errors-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/normal-module-replacement-plugin/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/plugins/min-chunk-size-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/npm-install-webpack-plugin/index.html</loc>
     </url>    <url>
