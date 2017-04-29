@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/3f9ffea438c2016ed5eb.css" rel="stylesheet">
+      <link href="/9078b8f230bf333c3fa3.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -146,6 +146,8 @@ npm <span class="token function">install</span> --save moment
 <ul>
 <li><code>dependencies</code> is an array of strings where we can declare all the modules that need to be made available before all the code in the callback function can be executed.</li>
 <li><code>callback</code> is a function that webpack will execute once the dependencies are loaded. An implementation of the <code>require</code> function is sent as a parameter to this function. The function body can use this to further <code>require()</code> modules it needs for execution.</li>
+</ul>
+<blockquote class="warning"><div class="tip-content"> Although the implementation of <code>require</code> is passed as an argument to the callback function, using an arbitrary name e.g. <code>require.ensure([], function (request) { request(&apos;someModule&apos;); })</code> isn&apos;t handled by webpack&apos;s static parser. Use <code>require</code> instead: <code>require.ensure([], function (require) { require(&apos;someModule&apos;); })</code> </div></blockquote><ul>
 <li>optional: <code>errorCallback</code> is a function that is executed when webpack fails to load the dependencies.</li>
 <li>optional: <code>chunkName</code> is a name given to the chunk created by this particular <code>require.ensure()</code>. By passing the same <code>chunkName</code> to various <code>require.ensure()</code> calls, we can combine their code into a single chunk, resulting in only one bundle that the browser must load.</li>
 </ul>
