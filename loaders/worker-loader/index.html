@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/2e244b71a02b68ebc475.css" rel="stylesheet">
+      <link href="/d5c23f163157fd56a090.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -54,6 +54,12 @@ which will be replaced with a content-dependent hash for caching purposes. For e
 <span class="token keyword">var</span> o <span class="token operator">=</span> <span class="token punctuation">{</span>foo<span class="token punctuation">:</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">}</span>
 
 _<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// true</span>
+
+<span class="token comment" spellcheck="true">// Post data to parent thread</span>
+self<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>foo<span class="token punctuation">:</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span> 
+
+<span class="token comment" spellcheck="true">// Respond to message from parent thread</span>
+self<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&apos;message&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>You can even use ES6 modules if you have the babel-loader configured:</p>
 <pre><code class="lang-javascript"><span class="token comment" spellcheck="true">// file.js</span>
@@ -62,6 +68,12 @@ _<span class="token punctuation">.</span><span class="token function">has</span>
 <span class="token keyword">let</span> o <span class="token operator">=</span> <span class="token punctuation">{</span>foo<span class="token punctuation">:</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">}</span>
 
 _<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// true</span>
+
+<span class="token comment" spellcheck="true">// Post data to parent thread</span>
+self<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>foo<span class="token punctuation">:</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">}</span><span class="token punctuation">)</span> 
+
+<span class="token comment" spellcheck="true">// Respond to message from parent thread</span>
+self<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&apos;message&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>event<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 class="header"><a class="anchor" href="#maintainers" id="maintainers"></a><span class="text">Maintainers</span><a class="icon-link" href="#maintainers"></a></h2>
 <table><tbody><tr><td align="center"><p><a href="https://github.com/sokra"></a></p>

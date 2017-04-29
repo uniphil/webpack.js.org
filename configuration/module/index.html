@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/2e244b71a02b68ebc475.css" rel="stylesheet">
+      <link href="/d5c23f163157fd56a090.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -32,7 +32,7 @@
 <h3 class="header"><a class="anchor" href="#rule-conditions" id="rule-conditions"></a><span class="text">Rule conditions</span><a class="icon-link" href="#rule-conditions"></a></h3>
 <p>There are two input values for the conditions:</p>
 <ol>
-<li><p>The resource: An absolute path to the file requested. It&apos;s already resolved according the <a href="/configuration/resolve"><code>resolve</code> rules</a>.</p>
+<li><p>The resource: An absolute path to the file requested. It&apos;s already resolved according to the <a href="/configuration/resolve"><code>resolve</code> rules</a>.</p>
 </li>
 <li><p>The issuer: An absolute path to the file of the module which requested the resource. It&apos;s the location of the import.</p>
 </li>
@@ -49,8 +49,8 @@
 </ol>
 <p>These properties affect the loaders: <a href="#rule-loader"><code>loader</code></a>, <a href="#rule-options-rule-query"><code>options</code></a>, <a href="#rule-use"><code>use</code></a>.</p>
 <p>For compatibility also these properties: <a href="#rule-options-rule-query"><code>query</code></a>, <a href="#rule-loaders"><code>loaders</code></a>.</p>
-<p>The <a href="#rule-enforce"><code>enforce</code></a> property affect the loader category. Whether it&apos;s an normal, pre- or post- loader.</p>
-<p>The <a href="#rule-parser"><code>parser</code></a> property affect the parser options.</p>
+<p>The <a href="#rule-enforce"><code>enforce</code></a> property affects the loader category. Whether it&apos;s a normal, pre- or post- loader.</p>
+<p>The <a href="#rule-parser"><code>parser</code></a> property affects the parser options.</p>
 <h2 class="header"><a class="anchor" href="#nested-rules" id="nested-rules"></a><span class="text">Nested rules</span><a class="icon-link" href="#nested-rules"></a></h2>
 <p>Nested rules can be specified under the properties <a href="#rule-rules"><code>rules</code></a> and <a href="#rule-oneof"><code>oneOf</code></a>. </p>
 <p>These rules are evaluated when the Rule condition matches.</p>
@@ -134,12 +134,12 @@
 <li>A string: To match the input must start with the provided string. I. e. an absolute directory path, or absolute path to the file.</li>
 <li>A RegExp: It&apos;s tested with the input.</li>
 <li>A function: It&apos;s called with the input and must return a truthy value to match.</li>
-<li>An array of Conditions: At least one of the Condition must match.</li>
+<li>An array of Conditions: At least one of the Conditions must match.</li>
 <li>A object: All properties must match. Each property has a defined behavior.</li>
 </ul>
-<p><code>{ test: Condition }</code>: The Condition must match. The convention is the provide a RegExp or array of RegExps here, but it&apos;s not enforced.</p>
-<p><code>{ include: Condition }</code>: The Condition must match. The convention is the provide a string or array of strings here, but it&apos;s not enforced.</p>
-<p><code>{ exclude: Condition }</code>: The Condition must NOT match. The convention is the provide a string or array of strings here, but it&apos;s not enforced.</p>
+<p><code>{ test: Condition }</code>: The Condition must match. The convention is to provide a RegExp or array of RegExps here, but it&apos;s not enforced.</p>
+<p><code>{ include: Condition }</code>: The Condition must match. The convention is to provide a string or array of strings here, but it&apos;s not enforced.</p>
+<p><code>{ exclude: Condition }</code>: The Condition must NOT match. The convention is to provide a string or array of strings here, but it&apos;s not enforced.</p>
 <p><code>{ and: [Condition] }</code>: All Conditions must match.</p>
 <p><code>{ or: [Condition] }</code>: Any Condition must match.</p>
 <p><code>{ not: Condition }</code>: The Condition must NOT match.</p>
