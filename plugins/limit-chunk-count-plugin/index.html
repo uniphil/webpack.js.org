@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/7fdb62cac18c0a624ded.css" rel="stylesheet">
+      <link href="/7cd1de97d4f2bdc478d8.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -47,7 +47,7 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>This will generate multiple entry chunks: <code>p1.entry.chunk.js</code>, <code>p2.entry.chunk.js</code> and <code>p3.entry.chunk.js</code>. But additional chunks can be shared by them.</p>
-<p>If your entry chunks have some modules in common, there is a cool plugin for this. The <a href="./commons-chunk-plugin"><code>CommonsChunkPlugin</code></a> identifies common modules and put them into a commons chunk. You need to add two script tags to your page, one for the commons chunk and one for the entry chunk.</p>
+<p>If your entry chunks have some modules in common, there is a cool plugin for this. The <a href="/plugins/commons-chunk-plugin"><code>CommonsChunkPlugin</code></a> identifies common modules and put them into a commons chunk. You need to add two script tags to your page, one for the commons chunk and one for the entry chunk.</p>
 <pre><code class="lang-javascript"><span class="token keyword">var</span> CommonsChunkPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;webpack/lib/optimize/CommonsChunkPlugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
   entry<span class="token punctuation">:</span> <span class="token punctuation">{</span>

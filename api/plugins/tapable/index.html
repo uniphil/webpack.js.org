@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/7fdb62cac18c0a624ded.css" rel="stylesheet">
+      <link href="/7cd1de97d4f2bdc478d8.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -26,8 +26,7 @@ However, in addition to this, <code>Tapable</code> allows you to have access to 
 <li><p><code>plugin(name:string, handler:function)</code> - This allows a custom plugin to register into a <strong>Tapable instance</strong>&apos;s event.
 This acts as the same as <code>on()</code> of <code>EventEmitter</code>, for registering a handler/listener to do something when the signal/event happens.</p>
 </li>
-<li><p><code>apply(&#x2026;pluginInstances: (AnyPlugin|function)[])</code> - <code>AnyPlugin</code> should be subclass of <a href="https://github.com/webpack/webpack/blob/master/lib/AbstractPlugin.js">AbstractPlugin</a>, or a class (or object, rare case) has an <code>apply</code> method, or just a function with some registration code inside.
-This method is just to <strong>apply</strong> plugins&apos; definition, so that the real event listeners can be registered into the <strong>Tapable instance</strong>&apos;s registry.</p>
+<li><p><code>apply(&#x2026;pluginInstances: (AnyPlugin|function)[])</code> - <code>AnyPlugin</code> should be a class (or, rarely, an object) that has an <code>apply</code> method, or just a function with some registration code inside. This method is just to <strong>apply</strong> plugins&apos; definition, so that the real event listeners can be registered into the <strong>Tapable instance</strong>&apos;s registry.</p>
 </li>
 <li><p><code>applyPlugins*(name:string, &#x2026;)</code> - The <strong>Tapable instance</strong> can apply all the plugins under a particular hash using these functions.
 These group of method act like <code>emit()</code> of <code>EventEmitter</code>, to control the event emission meticulously with various strategy for various use cases.</p>
@@ -49,7 +48,7 @@ These group of method act like <code>emit()</code> of <code>EventEmitter</code>,
 </li>
 </ul>
 <h2 class="header"><a class="anchor" href="#example" id="example"></a><span class="text">Example</span><a class="icon-link" href="#example"></a></h2>
-<p>One of webpack&apos;s <strong>Tapable instances</strong>, <a href="./compiler">Compiler</a>, is responsible for compiling the webpack configuration object and returning a <a href="./compilation">Compilation</a> instance. When the Compilation instance runs, it creates the required bundles.</p>
+<p>One of webpack&apos;s <strong>Tapable instances</strong>, <a href="/api/plugins/compiler">Compiler</a>, is responsible for compiling the webpack configuration object and returning a <a href="/api/plugins/compilation">Compilation</a> instance. When the Compilation instance runs, it creates the required bundles.</p>
 <p>See below is a simplified version of how this looks using <code>Tapable</code>.</p>
 <p><strong>node_modules/webpack/lib/Compiler.js</strong></p>
 <pre><code class="lang-javascript"><span class="token keyword">var</span> Tapable <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;tapable&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
