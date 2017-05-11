@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/b621aaa46e50319ccc9d.css" rel="stylesheet">
+      <link href="/bc3dba5a6023bb54deb9.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -27,7 +27,7 @@
 and will resolve them.</p>
 <p>Good loaders for requiring your assets are the <a href="/loaders/file-loader/">file-loader</a>
 and the <a href="/loaders/url-loader/">url-loader</a> which you should specify in your config (see <a href="https://github.com/michael-ciniawsky/css-loader#assets">below</a>).</p>
-<p><strong>file.css</strong></p>
+<p><strong>file.js</strong></p>
 <pre><code class="lang-js"><span class="token keyword">import</span> css <span class="token keyword">from</span> <span class="token string">&apos;file.css&apos;</span><span class="token punctuation">;</span>
 </code></pre>
 <p><strong>webpack.config.js</strong></p>
@@ -707,7 +707,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
         test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
         use<span class="token punctuation">:</span> env <span class="token operator">===</span> <span class="token string">&apos;production&apos;</span>
           <span class="token operator">?</span> ExtractTextPlugin<span class="token punctuation">.</span><span class="token function">extract</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-              fallback<span class="token punctuation">:</span> <span class="token string">&apos;style-loader&apos;</span>
+              fallback<span class="token punctuation">:</span> <span class="token string">&apos;style-loader&apos;</span><span class="token punctuation">,</span>
               use<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">&apos;css-loader&apos;</span> <span class="token punctuation">]</span>
           <span class="token punctuation">}</span><span class="token punctuation">)</span>
           <span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token string">&apos;style-loader&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;css-loader&apos;</span> <span class="token punctuation">]</span>
