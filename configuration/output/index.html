@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/f7ca18061547bf759ac7.css" rel="stylesheet">
+      <link href="/fe57abedc691dc4f6242.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -388,15 +388,15 @@ global<span class="token punctuation">.</span>MyLibrary<span class="token punctu
 <p><em>Wondering the difference between CommonJS and CommonJS2? Check <a href="https://github.com/webpack/webpack/issues/1114">this</a> out (they are pretty much the same).</em></p>
 <p><code>libraryTarget: &quot;commonjs-module&quot;</code> - Expose it using the <code>module.exports</code> object (<code>output.library</code> is ignored), <code>__esModule</code> is defined (it&apos;s threaded as ES2015 Module in interop mode)</p>
 <p><code>libraryTarget: &quot;amd&quot;</code> - In this case webpack will make your library an AMD module.</p>
-<p>But there is a very important pre-requisite, your entry chunk must be defined with the define property, if not, webpack will create the AMD module, but without dependencies. 
+<p>But there is a very important pre-requisite, your entry chunk must be defined with the define property, if not, webpack will create the AMD module, but without dependencies.
 The output will be something like this:</p>
 <pre><code class="lang-javascript"><span class="token function">define</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">//what this module returns is what your entry chunk returns</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>But if you download this script, you may get an error: <code>define is not defined</code>, it&#x2019;s ok! If you are distributing your library with AMD, then your users need to use RequireJS to load it. </p>
+<p>But if you download this script, you may get an error: <code>define is not defined</code>, it&#x2019;s ok! If you are distributing your library with AMD, then your users need to use RequireJS to load it.</p>
 <p>Now that you have RequireJS loaded, you can load your library.</p>
-<p>But, <code>require([ _what?_ ])</code>? </p>
+<p>But, <code>require([ _what?_ ])</code>?</p>
 <p><code>output.library</code>!</p>
 <pre><code class="lang-javascript">output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     library<span class="token punctuation">:</span> <span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">,</span>
@@ -414,8 +414,8 @@ The output will be something like this:</p>
     MyLibrary<span class="token punctuation">.</span><span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><code>libraryTarget: &quot;umd&quot;</code> - This is a way for your library to work with all the module definitions (and where aren&apos;t modules at all). 
-It will work with CommonJS, AMD and as global variable. You can check the <a href="https://github.com/umdjs/umd">UMD Repository</a> to know more about it. </p>
+<p><code>libraryTarget: &quot;umd&quot;</code> - This is a way for your library to work with all the module definitions (and where aren&apos;t modules at all).
+It will work with CommonJS, AMD and as global variable. You can check the <a href="https://github.com/umdjs/umd">UMD Repository</a> to know more about it.</p>
 <p>In this case, you need the <code>library</code> property to name your module:</p>
 <pre><code class="lang-javascript">output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     library<span class="token punctuation">:</span> <span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">,</span>
@@ -488,8 +488,7 @@ publicPath<span class="token punctuation">:</span> <span class="token string">&q
 publicPath<span class="token punctuation">:</span> <span class="token string">&quot;../assets/&quot;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// relative to HTML page</span>
 publicPath<span class="token punctuation">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// relative to HTML page (same directory)</span>
 </code></pre>
-<p>In cases where the <code>publicPath</code> of output files can&apos;t be known at compile time, it can be left blank and set dynamically at runtime in the entry file using the <a href="http://stackoverflow.com/questions/12934929/what-are-free-variables">free variable</a> <code>__webpack_public_path__</code>. </p>
-<p>E.g.:</p>
+<p>In cases where the <code>publicPath</code> of output files can&apos;t be known at compile time, it can be left blank and set dynamically at runtime in the entry file using the <a href="http://stackoverflow.com/questions/12934929/what-are-free-variables">free variable</a> <code>__webpack_public_path__</code>.</p>
 <pre><code class="lang-javascript"> __webpack_public_path__ <span class="token operator">=</span> myRuntimePublicPath
 
 <span class="token comment" spellcheck="true">// rest of your application entry</span>
