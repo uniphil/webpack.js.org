@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/fe57abedc691dc4f6242.css" rel="stylesheet">
+      <link href="/4d3cac970b66b9fe3218.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -89,7 +89,7 @@ compiler<span class="token punctuation">.</span><span class="token function">run
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p><code>Watching</code> options are <a href="/configuration/watch/#watchoptions">covered in detail here</a>.</p>
-<h3 class="header"><a class="anchor" href="#close-watching" id="close-watching"></a><span class="text">Close <code>Watching</code></span><a class="icon-link" href="#close-watching"></a></h3>
+<blockquote class="warning"><div class="tip-content"> Filesystem inaccuracies may trigger multiple builds for a single change. So, in the example above, the <code>console.log</code> statement may fire multiple times for a single modification. Users should expect this behavior and may check <code>stats.hash</code> to see if the file hash has actually changed. </div></blockquote><h3 class="header"><a class="anchor" href="#close-watching" id="close-watching"></a><span class="text">Close <code>Watching</code></span><a class="icon-link" href="#close-watching"></a></h3>
 <p>The <code>watch</code> method returns a <code>Watching</code> instance that exposes <code>.close(callback)</code> method. Calling this method will end watching:</p>
 <pre><code class="lang-js">watching<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Watching Ended.&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
