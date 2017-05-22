@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/02ee04622b5ba398a685.css" rel="stylesheet">
+      <link href="/3d63d56f9ca3af3b5359.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -198,7 +198,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <p>And then merge this common configuration with an environment specific configuration file using <code>webpack-merge</code>. Let&apos;s look at an example where we merge our production file:</p>
 <p><strong>webpack.prod.js</strong></p>
 <pre><code class="lang-js"><span class="token keyword">const</span> Merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;webpack-merge&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> CommonConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;./base.js&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> CommonConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;./webpack.common.js&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>env<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> <span class="token function">Merge</span><span class="token punctuation">(</span>CommonConfig<span class="token punctuation">,</span> <span class="token punctuation">{</span>
