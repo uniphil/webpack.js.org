@@ -24,9 +24,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/organization/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/plugins/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/pluginsapi/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/plugins/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/vote/index.html</loc>
     </url>    <url>
@@ -48,11 +48,11 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/concepts/dependency-graph/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/entry-points/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/hot-module-replacement/index.html</loc>
     </url>    <url>
@@ -68,9 +68,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/concepts/targets/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/configuration/configuration-types/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/configuration/configuration-languages/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/configuration/configuration-types/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/dev-server/index.html</loc>
     </url>    <url>
@@ -102,9 +102,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/configuration/watch/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/development/how-to-write-a-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/development/how-to-write-a-plugin/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/development/how-to-write-a-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/development/plugin-patterns/index.html</loc>
     </url>    <url>
@@ -156,13 +156,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/migrating/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/production-build/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/guides/output-management/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/public-path/index.html</loc>
+        <loc>https://webpack.js.org/guides/production-build/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/shimming/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/guides/public-path/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/task-test-runner/index.html</loc>
     </url>    <url>
@@ -252,9 +252,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/yaml-frontmatter-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/plugins/banner-plugin/index.html</loc>
+        <loc>https://webpack.js.org/pluginsapi/compiler/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/pluginsapi/template/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/babili-webpack-plugin/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/plugins/banner-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/commons-chunk-plugin/index.html</loc>
     </url>    <url>
@@ -298,11 +302,7 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/zopfli-webpack-plugin/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/pluginsapi/compiler/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/vote/feedback/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/pluginsapi/template/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/vote/moneyDistribution/index.html</loc>
     </url>    <url>
