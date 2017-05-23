@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/b96d3eecd1add4af62f0.css" rel="stylesheet">
+      <link href="/c79c6950aaa9b84ba574.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -36,7 +36,7 @@ content is served from dist/
 </code></pre>
 <p>that will give some background on where the server is located and what it&apos;s serving.</p>
 <p>If you&apos;re using dev-server through the Node.js API, the options in <code>devServer</code> will be ignored. Pass the options as a second parameter instead: <code>new WebpackDevServer(compiler, {...})</code>. <a href="https://github.com/webpack/webpack-dev-server/blob/master/examples/node-api-simple/server.js">See here</a> for an example of how to use webpack-dev-server through the Node.js API.</p>
-<blockquote class="warning"><div class="tip-content"> Be aware that when <a href="/configuration/configuration-types/#exporting-multiple-configurations">exporting multiple configurations</a> only the <code>devServer</code> options for the first configuration will be taken into account and used for all the configurations in the array. </div></blockquote><h2 class="header"><a class="anchor" href="#devserver-clientloglevel" id="devserver-clientloglevel"></a><span class="text"><code>devServer.clientLogLevel</code></span><a class="icon-link" href="#devserver-clientloglevel"></a></h2>
+<blockquote class="warning"><div class="tip-content"> Be aware that when <a href="/configuration/configuration-types/#exporting-multiple-configurations">exporting multiple configurations</a> only the <code>devServer</code> options for the first configuration will be taken into account and used for all the configurations in the array. </div></blockquote><blockquote class="tip"><div class="tip-content"> If you&apos;re having trouble, navigating to the <code>/webpack-dev-server</code> route will show where files are served. For example, <code>http://localhost:9000/webpack-dev-server</code>. </div></blockquote><h2 class="header"><a class="anchor" href="#devserver-clientloglevel" id="devserver-clientloglevel"></a><span class="text"><code>devServer.clientLogLevel</code></span><a class="icon-link" href="#devserver-clientloglevel"></a></h2>
 <p><code>string</code></p>
 <p>When using <em>inline mode</em>, the console in your DevTools will show you messages e.g. before reloading, before an error or when Hot Module Replacement is enabled. This may be too verbose.</p>
 <p>You can prevent all these messages from showing, by using this option:</p>
@@ -147,7 +147,7 @@ filename<span class="token punctuation">:</span> <span class="token string">&quo
 <p>Shows a full-screen overlay in the browser when there are compiler errors or warnings. Disabled by default. If you want to show only compiler errors:</p>
 <pre><code class="lang-js">overlay<span class="token punctuation">:</span> <span class="token boolean">true</span>
 </code></pre>
-<p>If you want to show warnings as well as errors: </p>
+<p>If you want to show warnings as well as errors:</p>
 <pre><code class="lang-js">overlay<span class="token punctuation">:</span> <span class="token punctuation">{</span>
   warnings<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
   errors<span class="token punctuation">:</span> <span class="token boolean">true</span>
