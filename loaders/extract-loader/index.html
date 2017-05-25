@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/c79c6950aaa9b84ba574.css" rel="stylesheet">
+      <link href="/b29ff385a857afee7e85.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -66,29 +66,50 @@ module<span class="token punctuation">.</span>exports <span class="token operato
     <span class="token punctuation">]</span><span class="token punctuation">,</span>
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
     module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
             <span class="token punctuation">{</span>
                 test<span class="token punctuation">:</span> indexHtml<span class="token punctuation">,</span>
-                loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-                    <span class="token string">&quot;file-loader?name=[name].[ext]&quot;</span><span class="token punctuation">,</span>
-                    <span class="token string">&quot;extract-loader&quot;</span><span class="token punctuation">,</span>
-                    <span class="token string">&quot;html-loader?&quot;</span> <span class="token operator">+</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-                        attrs<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;img:src&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;link:href&quot;</span><span class="token punctuation">]</span>
-                    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-                <span class="token punctuation">]</span>
+                use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;file-loader&quot;</span><span class="token punctuation">,</span>
+                        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            name<span class="token punctuation">:</span> <span class="token string">&quot;[name]-dist.[ext]&quot;</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;extract-loader&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;html-loader&quot;</span><span class="token punctuation">,</span>
+                        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            attrs<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;img:src&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;link:href&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                            interpolate<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
             <span class="token punctuation">}</span><span class="token punctuation">,</span>
             <span class="token punctuation">{</span>
                 test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
                 loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-                    <span class="token string">&quot;file-loader&quot;</span><span class="token punctuation">,</span>
-                    <span class="token string">&quot;extract-loader&quot;</span><span class="token punctuation">,</span>
-                    <span class="token string">&quot;css-loader&quot;</span>
-                <span class="token punctuation">]</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;file-loader&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;extract-loader&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
             <span class="token punctuation">}</span><span class="token punctuation">,</span>
             <span class="token punctuation">{</span>
                 test<span class="token punctuation">:</span> <span class="token regex">/\.jpg$/</span><span class="token punctuation">,</span>
-                loader<span class="token punctuation">:</span> <span class="token string">&quot;file-loader&quot;</span>
-            <span class="token punctuation">}</span>
+                loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;file-loader&quot;</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
         <span class="token punctuation">]</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -124,16 +145,26 @@ If you are using a relative <code>publicPath</code> in webpack&apos;s <a href="h
         publicPath<span class="token punctuation">:</span> <span class="token string">&quot;dist/&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
             <span class="token punctuation">{</span>
                 test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
-                loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-                    <span class="token comment" spellcheck="true">// target file: dist/assets/file.css</span>
-                    <span class="token string">&quot;file-loader?name=assets/[name].[ext]&quot;</span><span class="token punctuation">,</span>
-                    <span class="token comment" spellcheck="true">// back up one directory to reach &quot;dist/&quot;</span>
-                    <span class="token string">&quot;extract-loader?publicPath=../&quot;</span><span class="token punctuation">,</span>
-                    <span class="token string">&quot;css-loader&quot;</span>
-                <span class="token punctuation">]</span>
+                use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;file-loader&quot;</span><span class="token punctuation">,</span>
+                        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            name<span class="token punctuation">:</span> <span class="token string">&quot;assets/[name].[ext]&quot;</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;extract-loader&quot;</span><span class="token punctuation">,</span>
+                        options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                            publicPath<span class="token punctuation">:</span> <span class="token string">&quot;../&quot;</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span>
+                        loader<span class="token punctuation">:</span> <span class="token string">&quot;css-loader&quot;</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span>
             <span class="token punctuation">}</span>
         <span class="token punctuation">]</span>
     <span class="token punctuation">}</span>
