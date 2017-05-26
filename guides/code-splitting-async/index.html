@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/d810875d3553b6f2db99.css" rel="stylesheet">
+      <link href="/03594f41470a1e1e3bac.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -100,7 +100,7 @@ npm <span class="token function">install</span> --save moment
 </ul>
 <h3 class="header"><a class="anchor" href="#usage-with-babel-and-async-await" id="usage-with-babel-and-async-await"></a><span class="text">Usage with Babel and <code>async</code>/<code>await</code></span><a class="icon-link" href="#usage-with-babel-and-async-await"></a></h3>
 <p>To use ES2017 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function"><code>async</code></a>/<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await"><code>await</code></a> with <code>import()</code>:</p>
-<pre><code class="lang-bash">npm <span class="token function">install</span> --save-dev babel-plugin-transform-async-to-generator babel-plugin-transform-regenerator babel-plugin-transform-runtime
+<pre><code class="lang-bash">npm <span class="token function">install</span> --save-dev babel-plugin-transform-async-to-generator babel-plugin-transform-regenerator babel-plugin-transform-runtime babel-plugin-syntax-async-functions
 </code></pre>
 <p><strong>index-es2017.js</strong></p>
 <pre><code class="lang-javascript"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">determineDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -125,6 +125,7 @@ npm <span class="token function">install</span> --save moment
         options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
           presets<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&apos;es2015&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>modules<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
           plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&apos;syntax-async-functions&apos;</span><span class="token punctuation">,</span>
             <span class="token string">&apos;syntax-dynamic-import&apos;</span><span class="token punctuation">,</span>
             <span class="token string">&apos;transform-async-to-generator&apos;</span><span class="token punctuation">,</span>
             <span class="token string">&apos;transform-regenerator&apos;</span><span class="token punctuation">,</span>
