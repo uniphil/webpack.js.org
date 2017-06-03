@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/2f0cc157d0574f652818.css" rel="stylesheet">
+      <link href="/cc389650f151124a1e98.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -334,22 +334,17 @@
 <p>If using the <a href="#output-library"><code>output.library</code></a> option, the library name is automatically appended.</p>
 <h2 class="header"><a class="anchor" href="#output-library" id="output-library"></a><span class="text"><code>output.library</code></span><a class="icon-link" href="#output-library"></a></h2>
 <p><code>string</code></p>
-<p>Read the <a href="/guides/author-libraries">library guide</a> for details.</p>
 <p>Use <code>library</code>, and <code>libraryTarget</code> below, when writing a JavaScript library that should export values, which can be used by other code depending on it. Pass a string with the name of the library:</p>
 <pre><code class="lang-js">library<span class="token punctuation">:</span> <span class="token string">&quot;MyLibrary&quot;</span>
 </code></pre>
 <p>The name is used depending on the value of the <a href="#output-librarytarget"><code>output.libraryTarget</code></a> options.</p>
 <p>Note that <code>output.libraryTarget</code> defaults to <code>var</code>. This means if only <code>output.library</code> is used it is exported as variable declaration (when used as script tag it&apos;s available in the global scope after execution).</p>
-<h2 class="header"><a class="anchor" href="#output-librarytarget" id="output-librarytarget"></a><span class="text"><code>output.libraryTarget</code></span><a class="icon-link" href="#output-librarytarget"></a></h2>
+<blockquote class="tip"><div class="tip-content"> Read the <a href="/guides/author-libraries">authoring libraries guide</a> guide for more information on <code>output.library</code> as well as <code>ouput.libraryTarget</code>. </div></blockquote><h2 class="header"><a class="anchor" href="#output-librarytarget" id="output-librarytarget"></a><span class="text"><code>output.libraryTarget</code></span><a class="icon-link" href="#output-librarytarget"></a></h2>
 <p><code>string</code></p>
 <blockquote>
 <p>Default: <code>&quot;var&quot;</code></p>
 </blockquote>
-<p>Read the <a href="/guides/author-libraries">library guide</a> for details.</p>
 <p>Configure how the library will be exposed. Any one of the following options can be used.</p>
-<blockquote>
-<p>To give your library a name, set the <code>output.library</code> config to it (the examples assume <code>library: &quot;MyLibrary&quot;</code>)</p>
-</blockquote>
 <p>The following options are supported:</p>
 <p><code>libraryTarget: &quot;var&quot;</code> - (default) When your library is loaded, the <strong>return value of your entry point</strong> will be assigned to a variable:</p>
 <pre><code class="lang-javascript"><span class="token keyword">var</span> MyLibrary <span class="token operator">=</span> _entry_return_<span class="token punctuation">;</span>
@@ -388,37 +383,25 @@ global<span class="token punctuation">.</span>MyLibrary<span class="token punctu
 <span class="token comment" spellcheck="true">//your users will use your library like:</span>
 <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><em>Wondering the difference between CommonJS and CommonJS2? Check <a href="https://github.com/webpack/webpack/issues/1114">this</a> out (they are pretty much the same).</em></p>
-<p><code>libraryTarget: &quot;commonjs-module&quot;</code> - Expose it using the <code>module.exports</code> object (<code>output.library</code> is ignored), <code>__esModule</code> is defined (it&apos;s threaded as ES2015 Module in interop mode)</p>
-<p><code>libraryTarget: &quot;amd&quot;</code> - In this case webpack will make your library an AMD module.</p>
-<p>But there is a very important pre-requisite, your entry chunk must be defined with the define property, if not, webpack will create the AMD module, but without dependencies.
-The output will be something like this:</p>
+<blockquote class="tip"><div class="tip-content"> Wondering the difference between CommonJS and CommonJS2? Check <a href="https://github.com/webpack/webpack/issues/1114">this</a> out (they are pretty much the same). </div></blockquote><p><code>libraryTarget: &quot;amd&quot;</code> - In this case webpack will make your library an AMD module.</p>
+<p>Note that your entry chunk must be defined with the <code>define</code> property, if not, webpack will create the AMD module, but without dependencies. The output will be something like this:</p>
 <pre><code class="lang-javascript"><span class="token function">define</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//what this module returns is what your entry chunk returns</span>
+    <span class="token comment" spellcheck="true">// This module returns is what your entry chunk returns</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>But if you download this script, you may get an error: <code>define is not defined</code>, it&#x2019;s ok! If you are distributing your library with AMD, then your users need to use RequireJS to load it.</p>
-<p>Now that you have RequireJS loaded, you can load your library.</p>
-<p>But, <code>require([ _what?_ ])</code>?</p>
-<p><code>output.library</code>!</p>
+<p>If you download this script, you may get an error: <code>define is not defined</code>, it&#x2019;s ok! If you are distributing your library with AMD, then your users need to use RequireJS to load it. Once you have RequireJS loaded, you can load your library.</p>
+<p>So, with the following configuration...</p>
 <pre><code class="lang-javascript">output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     library<span class="token punctuation">:</span> <span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">,</span>
     libraryTarget<span class="token punctuation">:</span> <span class="token string">&quot;amd&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p>So your module will be like:</p>
-<pre><code class="lang-javascript"><span class="token function">define</span><span class="token punctuation">(</span><span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//what this module returns is what your entry chunk returns</span>
+<p>users will be able to call your library like so:</p>
+<pre><code class="lang-javascript"><span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&apos;MyLibrary&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>MyLibrary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Do something with the library...</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>And you can use it like this:</p>
-<pre><code class="lang-javascript"><span class="token comment" spellcheck="true">// And then your users will be able to do:</span>
-<span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>MyLibrary<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    MyLibrary<span class="token punctuation">.</span><span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p><code>libraryTarget: &quot;umd&quot;</code> - This is a way for your library to work with all the module definitions (and where aren&apos;t modules at all).
-It will work with CommonJS, AMD and as global variable. You can check the <a href="https://github.com/umdjs/umd">UMD Repository</a> to know more about it.</p>
+<p><code>libraryTarget: &quot;umd&quot;</code> - This is a way for your library to work with all the module definitions (and where aren&apos;t modules at all). It will work with CommonJS, AMD and as global variable. Take a look at the <a href="https://github.com/umdjs/umd">UMD Repository</a> to learn more.</p>
 <p>In this case, you need the <code>library</code> property to name your module:</p>
 <pre><code class="lang-javascript">output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     library<span class="token punctuation">:</span> <span class="token string">&quot;MyLibrary&quot;</span><span class="token punctuation">,</span>

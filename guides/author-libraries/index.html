@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/2f0cc157d0574f652818.css" rel="stylesheet">
+      <link href="/cc389650f151124a1e98.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -149,20 +149,19 @@ It would be unnecessary for your library to bundle a library like <code>lodash</
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>This makes your library bundle to be available as a global variable when imported.
-To make the library compatible with other environments, add <code>libraryTarget</code> property to the config.</p>
+<p>This makes your library bundle to be available as a global variable when imported. To make the library compatible with other environments, add <code>libraryTarget</code> property to the config.</p>
 <p><strong>webpack.config.js</strong></p>
 <pre><code class="lang-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
     output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
         <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
         library<span class="token punctuation">:</span> <span class="token string">&apos;webpackNumbers&apos;</span><span class="token punctuation">,</span>
-        libraryTarget<span class="token punctuation">:</span> <span class="token string">&apos;umd&apos;</span> <span class="token comment" spellcheck="true">// Possible value - amd, commonjs, commonjs2, commonjs-module, this, var</span>
+        libraryTarget<span class="token punctuation">:</span> <span class="token string">&apos;umd&apos;</span>
     <span class="token punctuation">}</span>
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<p>If <code>library</code> is set and <code>libraryTarget</code> is not, <code>libraryTarget</code> defaults to <code>var</code> as specified in the <a href="/configuration/output">config reference</a>.</p>
+<p>If <code>library</code> is set and <code>libraryTarget</code> is not, <code>libraryTarget</code> defaults to <code>var</code> as specified in the <a href="/configuration/output">output configuration documentation</a>. See <a href="/configuration/output#output-librarytarget"><code>output.libraryTarget</code></a> there for a detailed list of all available options.</p>
 <h3 class="header"><a class="anchor" href="#final-steps" id="final-steps"></a><span class="text">Final Steps</span><a class="icon-link" href="#final-steps"></a></h3>
 <p><a href="/guides/production-build">Tweak your production build using webpack</a>.</p>
 <p>Add the path to your generated bundle as the package&apos;s main file in <code>package.json</code></p>
