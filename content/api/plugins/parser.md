@@ -8,7 +8,7 @@ The parser instance takes a String and callback and will return an expression wh
 ```javascript
 compiler.parser.plugin("var rewire", function (expr) {
     //if you original module has 'var rewire'
-    //you now have a handle on the expresssion object
+    //you now have a handle on the expression object
     return true;
 });
 ```
